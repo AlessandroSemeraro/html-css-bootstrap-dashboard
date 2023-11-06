@@ -1,0 +1,57 @@
+/*RESET*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+body{
+    position: relative;
+}
+
+/*VIEWPORT*/
+.my_container-main{
+    height: calc(100vh - 5rem)
+    width: calc(100vw - 4rem)
+    overflow: auto;
+}
+
+/*NAVBAR*/
+.my_nav-size{
+    height: 5rem;
+}
+
+.img-logo{
+    width: 3rem;
+}
+
+.searchbar-width{
+    width: 100%;
+}
+
+.fa-size{
+    width: 1rem;
+}
+
+/*ASIDE*/
+aside{
+    width: 4rem;
+    padding-top: 5rem;
+    height:100vh;
+    position: fixed;
+}
+
+.container-aside{
+    height: 100%;
+}
+
+/*HEADER*/
+.container_info-bar{
+    height: 10rem;
+    width: calc(100vw - 4rem);
+}
