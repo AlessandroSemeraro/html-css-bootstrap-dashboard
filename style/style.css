@@ -17,10 +17,10 @@ body{
 /*VIEWPORT*/
 .my_container-main{
     height: calc(100vh - 5rem);
-    width: 100vw;
-    padding-top: 5rem;
-    padding-left: 4rem;
-    overflow: auto;
+    width: calc(100vw - 4rem);
+    overflow-y: auto;
+    margin-left: 4rem;
+    margin-top: 5rem;
 }
 
 /*NAVBAR*/
@@ -29,11 +29,30 @@ body{
 }
 
 .img-logo{
-    width: 3rem;
+    width: 2.5rem;
+}
+
+.img-logo-lg{
+    width: 9rem;
 }
 
 .searchbar-width{
     width: 100%;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: rgb(48, 48, 48);
+}
+
+.has-search .form-control {
+    padding-left: 2rem;
 }
 
 .fa-size{
@@ -43,8 +62,7 @@ body{
 /*ASIDE*/
 aside{
     width: 4rem;
-    padding-top: 5rem;
-    height:100vh;
+    height:calc(100vh - 5rem);
     position: fixed;
 }
 
@@ -52,8 +70,38 @@ aside{
     height: 100%;
 }
 
-/*BOTTOM-NAV*/
-.container_info-bar{
-    height: 10rem;
-    width: calc(100vw - 4rem);
+.my_mg-l-home{
+    margin-left: 10px;
 }
+
+.my_mg-l-stats{
+    margin-left: 14px;
+}
+
+.my_mg-l-signals{
+    margin-left: 8px;
+}
+
+.my_mg-l-admin{
+    margin-left: 12px;
+}
+
+/*ASIDE Desktop Media*/
+@media only screen and (min-width: 992px) {
+aside{
+    width: 8rem;
+}
+}
+
+
+/*BOTTOM-NAV*/
+.my_info-bar{
+    height: 10rem;
+}
+
+.container_my-info-bar{
+    height: 100%;
+    padding: 1.5rem 1rem;
+}
+
+/*
