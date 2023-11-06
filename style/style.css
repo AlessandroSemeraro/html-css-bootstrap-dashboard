@@ -16,8 +16,10 @@ body{
 
 /*VIEWPORT*/
 .my_container-main{
-    height: calc(100vh - 5rem)
-    width: calc(100vw - 4rem)
+    height: calc(100vh - 5rem);
+    width: 100vw;
+    padding-top: 5rem;
+    padding-left: 4rem;
     overflow: auto;
 }
 
@@ -50,7 +52,7 @@ aside{
     height: 100%;
 }
 
-/*HEADER*/
+/*BOTTOM-NAV*/
 .container_info-bar{
     height: 10rem;
     width: calc(100vw - 4rem);
