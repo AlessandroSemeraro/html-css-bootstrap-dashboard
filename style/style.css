@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+/*FONT*/
+*{  
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
 ul{
     list-style-type: none;
 }
@@ -22,6 +28,14 @@ body{
     margin-left: 4rem;
     margin-top: 5rem;
 }
+
+/*Container Desktop Media*/
+@media only screen and (min-width: 992px) {
+    .my_container-main{
+        width: calc(100vw - 8rem);
+        margin-left: 8rem;
+    }
+    }
 
 /*NAVBAR*/
 .my_nav-size{
@@ -96,12 +110,22 @@ aside{
 
 /*BOTTOM-NAV*/
 .my_info-bar{
-    height: 10rem;
+    height: 12rem;
 }
 
 .container_my-info-bar{
     height: 100%;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
 }
 
-/*
+.my_square-plus{
+    width: 3rem;
+    -webkit-filter: invert(100%);
+}
+
+.my_bg-items{
+    width: 10rem;
+    height: 2rem;
+    background-color: red;
+    border-radius: 10px;
+}
