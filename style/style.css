@@ -29,13 +29,14 @@ body{
     margin-top: 5rem;
 }
 
+
 /*Container Desktop Media*/
 @media only screen and (min-width: 992px) {
     .my_container-main{
         width: calc(100vw - 8rem);
         margin-left: 8rem;
     }
-    }
+}
 
 /*NAVBAR*/
 .my_nav-size{
@@ -73,6 +74,7 @@ body{
     width: 1rem;
 }
 
+
 /*ASIDE*/
 aside{
     width: 4rem;
@@ -100,6 +102,7 @@ aside{
     margin-left: 12px;
 }
 
+
 /*ASIDE Desktop Media*/
 @media only screen and (min-width: 992px) {
 aside{
@@ -110,7 +113,7 @@ aside{
 
 /*BOTTOM-NAV*/
 .my_info-bar{
-    height: 12rem;
+    height: 15rem;
 }
 
 .container_my-info-bar{
@@ -123,9 +126,17 @@ aside{
     -webkit-filter: invert(100%);
 }
 
-.my_bg-items{
-    width: 10rem;
-    height: 2rem;
-    background-color: red;
-    border-radius: 10px;
+.my_bg-elements{
+    background-color:#165BBA;
 }
+
+.my_fs-elements{
+    font-size: 0.2rem;
+}
+
+/*BOTTOM NAV Media*/
+@media only screen and (min-width: 768px) {
+ .my_info-bar  {
+       height: 6.5rem;
+    }
+    }
