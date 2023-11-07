@@ -29,6 +29,10 @@ body{
     margin-top: 5rem;
 }
 
+/*CONTAINER*/
+.my_container{
+
+}
 
 /*Container Desktop Media*/
 @media only screen and (min-width: 992px) {
@@ -158,6 +162,3 @@ aside{
     margin-right: 5px;
 }
 
-.my-rowwww{
-    height: 20rem;
-}
