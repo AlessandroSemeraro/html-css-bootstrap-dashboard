@@ -142,7 +142,7 @@ aside{
 
 /*MAIN-TABLE*/
 .my_fs-table{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .my_img-class{
@@ -158,6 +158,6 @@ aside{
     margin-right: 5px;
 }
 
-td{
-    height: 40.8px;
+.my-rowwww{
+    height: 20rem;
 }
