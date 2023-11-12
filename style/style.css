@@ -30,9 +30,7 @@ body{
 }
 
 /*CONTAINER*/
-.my_container{
 
-}
 
 /*Container Desktop Media*/
 @media only screen and (min-width: 992px) {
@@ -106,6 +104,13 @@ aside{
     margin-left: 12px;
 }
 
+.my_hover-aside :hover{
+    background-color:rgb(190, 189, 189);
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: #b7b7b7;
+  }
 
 /*ASIDE Desktop Media*/
 @media only screen and (min-width: 992px) {
