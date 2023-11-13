@@ -57,7 +57,7 @@
                 </div>
             </div>
 
-            <!--BELL-->
+            <!--BELL SECTION + BELL DROPDOWN-->
             <ul class="ps-3 d-flex align-items-center mb-0 d-lg-flex d-lg-flex-row justify-content-lg-between">
                 <li class="d-none d-lg-block me-3">
                     <i class="fa-solid fa-list" style="color: #656565;"></i>
@@ -71,9 +71,9 @@
                 <li class="dropdown">
                     <i class="btn-secondary  fa-size fa-solid fa-bell" style="color: #ff8000;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#">Profilo</a></li>
-                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                        <li><a class="dropdown-item" href="#">Log out</a></li>
+                        <li><a class="dropdown-item fs-6" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item fs-6" href="#">Fatturazione</a></li>
+                        <li><a class="dropdown-item fs-6" href="#">Log out</a></li>
                     </ul>
                 </li>
             </ul>
@@ -119,11 +119,77 @@
 
         <!--INFOBAR ADMIN - BOTTOM-NAV-->
         <section class="my_info-bar bg-primary">
-            <ul
-                class="container_my-info-bar d-flex flex-column justify-content-between d-md-flex flex-md-row justify-content-md-between">
+            <ul class="container_my-info-bar d-flex flex-column justify-content-between d-md-flex flex-md-row justify-content-md-between">
                 <div class="order-md-3">
                     <li class="text-white  fs-6">Nuovo Studente <span> 
-                        <button class="btn btn-primary border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button></li>
+                        <!--OFF CANVAS-->
+                        <button class="btn btn-primary border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight">+</button></li>
+                        <div class="offcanvas w-100 offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="mb-3 row">
+                                    <div class="col-lg-6 col-md-6 mb-3">
+                                        <label for="inputName" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="inputName">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-3">
+                                        <label for="inputSurname" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" id="inputSurname">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-3">
+                                        <label for="inputEmail" class="form-label">Email</label>
+                                        <div class="input-group">
+                                            <div class="input-group-text">@</div>
+                                            <input type="text" class="form-control" id="inlineFormInputGroupUsername">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-3">
+                                        <label for="InputPassword1" class="form-label">Password</label>
+                                        <input type="text" class="form-control" id="inputPassword">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="addresse" class="form-label">Indirizzo</label>
+                                        <input type="tex" class="form-control" id="inputAddresse">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-3">
+                                        <label for="inputCity" class="form-label">Città</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 mb-3">
+                                        <label for="inputState" class="form-label">Stato</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Scegli...</option>
+                                            <option>Italia</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 mb-3">
+                                        <label for="inputZip" class="form-label">CAP</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFileMultiple" class="form-label">Foto</label>
+                                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Seleziona per proseguire
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <button type="submit" class="btn btn-primary">Salva</button>
+                                    <button type="submit" class="btn btn-warning">Svuota</button>
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
                 </div>
                 <div class="order-md-1">
                     <li class="text-white fs-2 lh-1">Boolean <span
